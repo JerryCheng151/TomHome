@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /*
+    引用数据类型：
+    Object -- 对象 
+    JS变量都是保存到栈内存里
+    基本数据类型都是直接在栈内存中存储，值与值独立存在
+    对象是保存在堆内存里的，每创建一个新的对象就会在堆内存里开辟一块新的空间。
+    
+
+     */
+      var a = 123;
+      var b = a;
+      a++;
+      
+     /*  console.log("a = "+a)
+      console.log("b = "+b) */
+ 
+     var obj = new Object();
+     obj.name = "孙悟空";
+
+     var obj2 = obj;
+     obj.name = "猪八戒";
+     console.log(obj.name);
+     console.log(obj.name);
+     /*
+    当比较两个基本数据类型时，就是比较值
+    当比较两个引用数据类型时，就是比较对象的内存地址；当两个对象时一摸一样的，地址不同，它也会返回false.
+
+
+      */
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

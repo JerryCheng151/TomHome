@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /*
+    字面量都是一些不可变的值
+    比如：12345， 字面量都是可以直接使用的，但是我们一般不直接使用字面量
+    变量：变量可以来保存字面量，而且变量的值可以任意改变的，变量更加方便我们使用，所以开发中都是通过变量去保存一个字面量 
+    */
+       var height = prompt("请输入你的身高（cm）：");
+       var money = prompt("请输入你的财富(万)：");
+       var face = prompt("请输入你的颜值（PX）");
+       if(height>=180 && money>=500 && face>=500){
+           alert("我一定嫁给他~~")
+       } 
+       else if(height>=180 || money>=500 || face>=500){
+           alert("嫁吧，还行~~")
+       }
+       else{
+           alert("不嫁，渣男~~")
+       }
+    </script>
+</head>
+<body>    
+</body>
+</html>

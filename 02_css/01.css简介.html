@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 第二种方式（内部样式表）：编写到head中的style标签里
+          
+    -->
+<!--
+    <style>
+    p{
+        color: blue;
+        font-size: 60px;
+        }
+</style>
+-->
+
+</head>
+<body>
+    <!-- 
+        网页分成3部分
+        结构（html）
+        表现（css）
+        行为（JavaScript）
+
+        css:层叠样式表
+        网页实际上是一个多层的结构，通过css可以分别为每一个层设置样式
+        
+        第一种方式（内行样式表）： 标签内部通过style属性来设置元素样式,但只能对一个标签生效。非常不方便！（开发时绝对不要使用内联样式） 
+     -->
+
+           <!--  <p style="color: red; font-size: 60px;">少小离家老大回，乡音无改鬓毛衰。</p>
+           <p style="color: red; font-size: 60px;">今天天气真不错！</p>  
+        第三种方式（外部样式表）：将css编写到一个外部文件中，通过link标签来引入外部的css。
+        
+        -->
+
+          <p>落霞与孤鹜齐飞，秋水共长天一色。</p>   
+          <link rel="stylesheet" href="./01.style.css">
+
+</body>
+</html>

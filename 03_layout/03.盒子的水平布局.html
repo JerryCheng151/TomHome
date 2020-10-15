@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .outer{
+        width: 800px;
+        height: 200px;
+        border: 10px red solid;
+    }
+    .inner{
+        width: 200px;
+        height: 200px;
+        background-color: #bfa;
+    }
+    /* 
+      元素的水平方向布局依次为：
+        margin-left
+        border-left
+        padding-left
+        width
+        padding-right
+        border-right
+        margin-right
+
+      一个元素在其父元素中，满足以下等式（一定满足）
+         margin-left+border-left+padding-left+width+padding-right+border-right+margin-right = 其父元素内容区的宽度
+         如果等式不满足，则称为过度约束，则等式会自动调整(两种情况：1、如果七个值没有auto情况，则会自动调整margin-right值使等式满足。2、如果某个值设置成auto，则会自动调整auto的值使等式成立。
+              */
+</style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+</body>
+</html>

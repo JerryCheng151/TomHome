@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+    var str = "1a2b3c4d5e6f";
+    /* 
+    split()
+    -可以将一个字符串拆分为数组
+    -方法中可以传递一个正则表达式作为参数，这样方法会根据正则表达式去拆分字符串
+     */
+     
+     /* 
+     根据任意字母拆分字符串
+      */
+     var result = str.split(/[A-z]/);
+
+     /* 
+     search()
+     -可以搜索字符串中是否含有指定内容
+     -如果搜索的指定内容，则会返回第一次出现的索引，如果没有则会返回-1
+     -它可以接受一个正则表达式作为参数，然会会根据正则表达式去检索字符串
+      */
+      str = "hello abc hello abc";
+      /* 
+      搜索字符串中是否含有abc 或 aec 或 afc
+       */
+      var result = search("a[bef]c");
+
+      /* 
+      match()
+      -可以根据正则表达式，从一个字符串中将符合条件的内容提取出来
+      -默认情况下，我们的match()只会找到第一个符合要求的内容，找到以后就停止检索
+         我们可以设置正则表达式为全局模式，这样就能匹配到所有内容
+      -可以为正则表达式设置多个匹配模式，且顺序无所谓
+      -match() 会将怕匹配到的内容封装到一个数组中返回，即使只查询到一个结果
+       */
+
+       str = "1a2b3c4d5e6f7";
+       result = str.match(/[a-z]/gi);  
+     console.log(result);
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

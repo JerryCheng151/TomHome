@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+        函数    函数也是一个对象
+        ---函数可以封装一些功能（代码）
+        可以保存一些代码在需要的时候使用 
+        
+         */
+         console.log("我是第一行");
+         console.log("我是第二行");
+         console.log("我是第三行");
+         var fun = new Function();
+
+    // 封装到函数中的代码不会立即执行
+    // 函数中的代码会在调用时执行
+    // 当调用函数时，函数中的代码会按顺序执行
+
+//    在实际开发中很少使用构造函数来构建函数对象
+         /* 语法：
+         function 函数名([形参1  形参2.......形参n]){
+             语句...
+         } 
+         
+          */
+          function fun2(){
+              console.log("这是我的第二个函数");
+              alert("哈哈哈哈");
+              document.write("heihei ")
+
+          }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

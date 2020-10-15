@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: #bfa;
+        border-width: 10px;
+        border-color:orange;
+        border-style: solid;
+        /* 内边距会影响盒子的大小,四个方向： top right bottom left */
+        padding: 100px 100px 100px 100px;     
+          /*外边距不会影响盒子大小，但会影响盒子的位置，四个方向：top right bottom left
+            默认情况我们设置左，上，会移动盒子自身，而设置右，下会移动其他盒子（挤其他盒子）
+            margin也可以设置负值，如果是负值会向相反的方向移动。
+            */
+        margin: 100px 100px 100px 100px;
+    }
+    .inner{
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <!-- 
+        盒模型、框模型（box model）
+          -css将页面都设置成了一个矩形的盒子
+          -将元素设置成矩形盒子后，对页面的布局将会简单
+          -每一个盒子都有以下几个部分组成
+             内容去（content）
+             内边距（padding）
+             外边距（margin）
+             边框（border）
+
+     -->
+     <div class="box1">
+         <div class="inner"></div>
+     </div>
+
+
+
+
+
+</body>
+</html>

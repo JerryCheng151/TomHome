@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    // 创建一个对象
+    var obj = {
+        name:"孙悟空",
+        age:18,
+        gender:"男",
+        sayName:function() {
+            alert(this.name)
+        }
+    };
+    /*
+    为了解决创建多个对象带来的相同的代码，我们可以使用工厂方法来创建对象 
+     */
+     function creatPerson(name,age,gender){
+        //  创建一个新的对象
+        var obj = new Object;
+        // 向对象中添加属性
+        obj.name=name;
+        obj.age=age;
+        obj.gender=gender;
+        obj.sayName= function(){
+            alert(this.name)
+        };
+        // 将新的对象返回
+        return obj;
+     }
+     var obj1 = creatPerson("猪八戒","18","男")
+     var obj2 = creatPerson("孙悟空","17","男")
+     var obj3 = creatPerson("沙和尚","15","男")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

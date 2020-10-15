@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+/* 
+创建一个正则表达式检查字符串中是否含有aaa
+ */
+
+/* 
+ 量词：
+ -通过量词可以设置一个内容出现的次数 {n} 表示出现N次
+ -量词只对前边的一个内容起作用
+ */
+
+    var reg  =  /a{3}/;
+    var reg  =  /(ab){2}/       //表示ab出现两次
+    console.log(reg.test("aaabc"))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

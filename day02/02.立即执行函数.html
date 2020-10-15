@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       ( function(){
+           alert("我是一个匿名函数")
+       })();
+        /*
+        立即执行函数
+        函数定义完，立即被调用，这种函数叫做立即执行函数，立即执行函数往往只会执行一次 
+         */
+         (function(a,b){
+           console.log("a = a"+a);
+           console.log("b = b"+b);
+         })(123,456)
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

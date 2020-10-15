@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #outer{
+        width: 500px;
+        margin: 50px auto;
+        padding: 10px;
+        background-color: greenyellow;
+        text-align: center;
+
+    }
+    </style>
+
+
+    <script type="text/javascript">
+       window.onload = function(){
+       /* 点击按钮切换照片 */
+
+    //    获得两个按钮
+    var prev = document.getElementById("prev");
+    var next = document.getElementById("next");
+    // 分别为两个按钮绑定单击响应函数
+    
+    /* 切换图片我们要修改img中src的属性 */
+    var img = document.getElementsByTagName("img")[0];
+    //   创建一个数组，用来保存我们的图片路径
+    var imgArr = ["img/1.jpg" , "img/2.jpg" , "img/3.jpg" , "img/4.jpg" , "img/5.jpg"];
+        
+    // 创建一个变量用来保存当前正在显示的图片的索引
+    var index = 0;
+
+    // 设置提示文字
+    var info = document.getElementById("info");
+    info.innerHTML = "一共 "+imgArr.length+" 照片，当前第 "+(index+1)+" 张";
+
+
+    prev.onclick = function(){
+        // alert("上一张");
+
+        index--;            
+        if (index<0){
+            index = imgArr.length-1;
+        }
+
+        img.src = imgArr[index];
+        
+        // 当点击按钮后，重新设置信息
+        info.innerHTML = "一共 "+imgArr.length+" 张图片，当前第 "+(index+1)+" 张";
+    };
+    
+    
+    next.onclick = function(){
+        // alert("下一张");
+
+        index++;
+        if(index > imgArr.length-1){
+            index = 0;
+        }
+
+        img.src = imgArr[index];
+
+         // 当点击按钮后，重新设置信息
+         info.innerHTML = "一共 "+imgArr.length+" 张图片，当前第 "+(index+1)+" 张";
+    };
+
+
+
+       };
+    </script>
+
+</head>
+<body>
+    <div id="outer">
+        <p id="info"></p>
+        <img src="img/1.jpg" alt="冰棍" />
+        <button id="prev">上一张</button>
+        <button id="next">下一张</button>
+    </div>
+    
+</body>
+</html>
